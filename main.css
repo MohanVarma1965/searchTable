@@ -1,0 +1,41 @@
+body {
+    margin-top: 150px;
+    font-family: 'Lato', sans-serif;
+}
+
+table {
+    margin-top: 30px;
+}
+
+tr:nth-of-type(even) {
+    background: #ffd98b;
+}
+
+thead {
+    background: #fbb016;
+}
+
+
+th, td, p, input {
+    font:14px Verdana;
+}
+table, th, td
+{
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+th {
+    font-weight:bold;
+}
+
+input {
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #212121;
+    width: 100%;
+    font-weight: 800;
+    font-size: x-large;
+    height: 80px;
+}
