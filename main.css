@@ -1,24 +1,46 @@
 body {
-    margin-top: 150px;
+    padding-top: 50px;
     font-family: 'Lato', sans-serif;
+    background-image: url("back.gif");
 }
 
 table {
     margin-top: 30px;
 }
 
+
 tr:nth-of-type(even) {
-    background: #ffd98b;
+    background: white;
+    color: black;
+    transition: all .2s ease-in-out;
 }
 
-thead {
-    background: #fbb016;
+
+tr:nth-of-type(odd) {
+    background: #DDDDDD;
+    color: black;
+    transition: all .2s ease-in-out;
 }
 
+
+tr:first-of-type {
+    background-color: black;
+    color: antiquewhite;
+    font-size: x-large;
+    background-color: black;
+    color: antiquewhite;
+    font-size: x-large;
+    border: 2px solid cornsilk;
+}
 
 th, td, p, input {
-    font:14px Verdana;
+    font:17px Verdana;
 }
+
+tr:hover {
+    transform: scale(1.1);
+}
+
 table, th, td
 {
     border: solid 1px #DDD;
@@ -38,4 +60,25 @@ input {
     font-weight: 800;
     font-size: x-large;
     height: 80px;
+    transition: all .2s ease-in-out;
+    color: peru;
+}
+
+input:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
 }
